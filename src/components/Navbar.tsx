@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <img 
-            src="/lovable-uploads/1e8486e8-a190-47a5-8caa-9b2b847a9f61.png" 
+            src="/lovable-uploads/6a52a1ab-e90c-42c0-918f-9671fdd350b5.png" 
             alt="Shlok Motors & Finance Logo" 
             className="h-12 w-auto"
           />
