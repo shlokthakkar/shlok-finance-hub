@@ -64,9 +64,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				finance: {
-					primary: '#4F46E5',
-					secondary: '#8B5CF6',
-					accent: '#C4B5FD',
+					primary: '#9BC53D', // Green from Shlok logo
+					secondary: '#5BC0EB', // Blue from Shlok logo
+					accent: '#E3F09B',
 					muted: '#F3F4F6',
 					dark: '#1E293B',
 				}
