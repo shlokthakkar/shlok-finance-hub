@@ -17,7 +17,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/6a52a1ab-e90c-42c0-918f-9671fdd350b5.png" 
             alt="Shlok Motors & Finance Logo" 
-            className="h-16 md:h-20 w-40 md:w-48" // Increased from h-12 to h-16/h-20
+            className="h-14 md:h-14 w-auto" // Increased from h-12 to h-16/h-20
           />
         </Link>
 

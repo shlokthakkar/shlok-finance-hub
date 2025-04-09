@@ -232,9 +232,9 @@ const ServicesPage = () => {
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <Button asChild size="lg" className="bg-white text-finance-primary hover:bg-gray-100">
-              <Link to="/inquiry">Request a Quote</Link>
+              <Link to="/inquiry">Get a Quote</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button asChild size="lg" className="bg-white text-finance-primary hover:bg-gray-100">
               <Link to="/contact">Contact Us</Link>
             </Button>
           </div>

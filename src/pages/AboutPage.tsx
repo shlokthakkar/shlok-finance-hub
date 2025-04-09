@@ -61,7 +61,7 @@ const AboutPage = () => {
           <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl mx-auto">
             <div className="md:w-1/3">
               <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" 
+                src="/chiragthakkar.jpg?auto=format&fit=crop&q=80&w=400"
                 alt="Chirag Thakkar - Founder" 
                 className="rounded-lg shadow-lg w-full"
               />
@@ -209,7 +209,7 @@ const AboutPage = () => {
             <Button asChild className="bg-finance-primary hover:bg-finance-primary/90">
               <Link to="/inquiry">Get a Quote</Link>
             </Button>
-            <Button asChild variant="outline">
+            <Button asChild className="bg-finance-primary hover:bg-finance-primary/90">
               <Link to="/contact">Contact Us</Link>
             </Button>
           </div>

@@ -100,14 +100,14 @@ const HomePage = () => {
               <Button asChild size="lg" className="bg-white text-finance-primary hover:bg-gray-100 font-bold">
                 <Link to="/services">Our Services</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white/10 font-bold">
+              <Button asChild size="lg" className="bg-white text-finance-primary hover:bg-gray-100 font-bold">
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
           </div>
           <div className="lg:w-1/2 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <img 
-              src="https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+              src="/Good_Image.jpg"
               alt="Family with new car" 
               className="rounded-lg shadow-2xl"
             />
@@ -339,7 +339,7 @@ const HomePage = () => {
             </div>
             <div className="lg:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=1000" 
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=1000"
                 alt="Shlok Motors Office" 
                 className="rounded-lg shadow-lg"
               />
@@ -401,7 +401,7 @@ const HomePage = () => {
             <Button asChild size="lg" className="bg-white text-finance-primary hover:bg-gray-100 font-bold">
               <Link to="/contact">Contact Us</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 font-bold">
+            <Button asChild size="lg" className="bg-white text-finance-primary hover:bg-gray-100 font-bold">
               <Link to="/services">Explore Services</Link>
             </Button>
           </div>
