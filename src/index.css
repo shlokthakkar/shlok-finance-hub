@@ -101,7 +101,7 @@
 }
 
 .service-card {
-  @apply p-6 bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  @apply bg-white rounded-lg shadow-md transition-all duration-300;
 }
 
 .gradient-text {
@@ -122,15 +122,15 @@
 
 /* Custom classes for Shlok theme */
 .shlok-green {
-  @apply bg-primary text-white;
+  @apply bg-finance-primary text-white;
 }
 
 .shlok-blue {
-  @apply bg-secondary text-white;
+  @apply bg-finance-secondary text-white;
 }
 
 .shlok-gradient {
-  @apply bg-gradient-to-r from-primary to-secondary text-white;
+  @apply bg-gradient-to-r from-finance-primary to-finance-secondary text-white;
 }
 
 .hide-scrollbar::-webkit-scrollbar {

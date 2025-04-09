@@ -23,19 +23,19 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <Link to="/" className="text-gray-700 hover:text-primary font-medium transition-colors">
+          <Link to="/" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             Home
           </Link>
-          <Link to="/about" className="text-gray-700 hover:text-primary font-medium transition-colors">
+          <Link to="/about" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             About Us
           </Link>
-          <Link to="/services" className="text-gray-700 hover:text-primary font-medium transition-colors">
+          <Link to="/services" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             Services
           </Link>
-          <Link to="/insurance" className="text-gray-700 hover:text-primary font-medium transition-colors">
+          <Link to="/insurance" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             Insurance
           </Link>
-          <Link to="/contact" className="text-gray-700 hover:text-primary font-medium transition-colors">
+          <Link to="/contact" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             Contact
           </Link>
         </nav>
@@ -52,35 +52,35 @@ const Navbar = () => {
           <nav className="flex flex-col space-y-4">
             <Link 
               to="/" 
-              className="text-gray-700 hover:text-primary font-medium py-2 transition-colors"
+              className="text-gray-700 hover:text-finance-primary font-medium py-2 transition-colors"
               onClick={toggleMenu}
             >
               Home
             </Link>
             <Link 
               to="/about" 
-              className="text-gray-700 hover:text-primary font-medium py-2 transition-colors"
+              className="text-gray-700 hover:text-finance-primary font-medium py-2 transition-colors"
               onClick={toggleMenu}
             >
               About Us
             </Link>
             <Link 
               to="/services" 
-              className="text-gray-700 hover:text-primary font-medium py-2 transition-colors"
+              className="text-gray-700 hover:text-finance-primary font-medium py-2 transition-colors"
               onClick={toggleMenu}
             >
               Services
             </Link>
             <Link 
               to="/insurance" 
-              className="text-gray-700 hover:text-primary font-medium py-2 transition-colors"
+              className="text-gray-700 hover:text-finance-primary font-medium py-2 transition-colors"
               onClick={toggleMenu}
             >
               Insurance
             </Link>
             <Link 
               to="/contact" 
-              className="text-gray-700 hover:text-primary font-medium py-2 transition-colors"
+              className="text-gray-700 hover:text-finance-primary font-medium py-2 transition-colors"
               onClick={toggleMenu}
             >
               Contact

@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -98,7 +97,7 @@ const HomePage = () => {
               Shlok Motors & Finance offers tailored car loans and insurance solutions to make your automotive journey smooth and affordable.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100 font-bold">
+              <Button asChild size="lg" className="bg-white text-finance-primary hover:bg-gray-100 font-bold">
                 <Link to="/services">Our Services</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white/10 font-bold">
@@ -116,7 +115,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Services Overview */}
+      {/* Services Overview - Improved Layout */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -127,70 +126,94 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="service-card border-t-4 border-t-primary">
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="h-16 w-16 rounded-full bg-accent flex items-center justify-center mb-4">
-                  <Car className="h-8 w-8 text-primary" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card className="service-card flex flex-col h-full border-t-4 border-t-finance-primary hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6 flex flex-col h-full">
+                <div className="flex items-start mb-6">
+                  <div className="h-14 w-14 rounded-full bg-finance-accent flex items-center justify-center mr-4 flex-shrink-0">
+                    <Car className="h-7 w-7 text-finance-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-2">Car Loans</h3>
+                    <p className="text-gray-600">
+                      Get competitive interest rates on new and used car financing with flexible repayment options tailored to your financial situation.
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Car Loans</h3>
-                <p className="text-gray-600">
-                  Get competitive interest rates on new and used car financing with flexible repayment options.
-                </p>
-                <Button asChild className="mt-4 bg-primary hover:bg-primary/90 w-full">
-                  <Link to="/services">Learn More</Link>
-                </Button>
+                <div className="mt-auto">
+                  <Button asChild className="w-full bg-finance-primary hover:bg-finance-primary/90 text-white">
+                    <Link to="/services">Learn More</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="service-card border-t-4 border-t-primary">
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="h-16 w-16 rounded-full bg-accent flex items-center justify-center mb-4">
-                  <Calculator className="h-8 w-8 text-primary" />
+            <Card className="service-card flex flex-col h-full border-t-4 border-t-finance-primary hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6 flex flex-col h-full">
+                <div className="flex items-start mb-6">
+                  <div className="h-14 w-14 rounded-full bg-finance-accent flex items-center justify-center mr-4 flex-shrink-0">
+                    <Calculator className="h-7 w-7 text-finance-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-2">EMI Options</h3>
+                    <p className="text-gray-600">
+                      Customize your EMI plans based on your budget and financial goals with our flexible options designed for your convenience.
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">EMI Options</h3>
-                <p className="text-gray-600">
-                  Customize your EMI plans based on your budget and financial goals with our flexible options.
-                </p>
-                <Button asChild className="mt-4 bg-primary hover:bg-primary/90 w-full">
-                  <Link to="/services">Learn More</Link>
-                </Button>
+                <div className="mt-auto">
+                  <Button asChild className="w-full bg-finance-primary hover:bg-finance-primary/90 text-white">
+                    <Link to="/services">Learn More</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="service-card border-t-4 border-t-primary">
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="h-16 w-16 rounded-full bg-accent flex items-center justify-center mb-4">
-                  <Shield className="h-8 w-8 text-primary" />
+            <Card className="service-card flex flex-col h-full border-t-4 border-t-finance-primary hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6 flex flex-col h-full">
+                <div className="flex items-start mb-6">
+                  <div className="h-14 w-14 rounded-full bg-finance-accent flex items-center justify-center mr-4 flex-shrink-0">
+                    <Shield className="h-7 w-7 text-finance-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-2">Insurance Advisory</h3>
+                    <p className="text-gray-600">
+                      Professional guidance for choosing the right insurance coverage for your vehicle with expert advice from our experienced team.
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Insurance Advisory</h3>
-                <p className="text-gray-600">
-                  Professional guidance for choosing the right insurance coverage for your vehicle with expert advice.
-                </p>
-                <Button asChild className="mt-4 bg-primary hover:bg-primary/90 w-full">
-                  <Link to="/insurance">Learn More</Link>
-                </Button>
+                <div className="mt-auto">
+                  <Button asChild className="w-full bg-finance-primary hover:bg-finance-primary/90 text-white">
+                    <Link to="/insurance">Learn More</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="service-card border-t-4 border-t-primary">
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="h-16 w-16 rounded-full bg-accent flex items-center justify-center mb-4">
-                  <Award className="h-8 w-8 text-primary" />
+            <Card className="service-card flex flex-col h-full border-t-4 border-t-finance-primary hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6 flex flex-col h-full">
+                <div className="flex items-start mb-6">
+                  <div className="h-14 w-14 rounded-full bg-finance-accent flex items-center justify-center mr-4 flex-shrink-0">
+                    <Award className="h-7 w-7 text-finance-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-2">Premium Support</h3>
+                    <p className="text-gray-600">
+                      Dedicated customer support and guidance throughout your financing journey to ensure your satisfaction and peace of mind.
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Premium Support</h3>
-                <p className="text-gray-600">
-                  Dedicated customer support and guidance throughout your financing journey to ensure your satisfaction.
-                </p>
-                <Button asChild className="mt-4 bg-primary hover:bg-primary/90 w-full">
-                  <Link to="/contact">Contact Us</Link>
-                </Button>
+                <div className="mt-auto">
+                  <Button asChild className="w-full bg-finance-primary hover:bg-finance-primary/90 text-white">
+                    <Link to="/contact">Contact Us</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
 
           <div className="text-center mt-12">
-            <Button asChild className="bg-primary hover:bg-primary/90">
+            <Button asChild className="bg-finance-primary hover:bg-finance-primary/90 text-white">
               <Link to="/services">View All Services <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
@@ -375,7 +398,7 @@ const HomePage = () => {
             Speak with our finance experts today and discover the best options available for you.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100 font-bold">
+            <Button asChild size="lg" className="bg-white text-finance-primary hover:bg-gray-100 font-bold">
               <Link to="/contact">Contact Us</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 font-bold">
