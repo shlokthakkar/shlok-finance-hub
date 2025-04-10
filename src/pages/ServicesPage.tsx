@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import ServiceCard from '@/components/ServiceCard';
-import { Car, Calculator, CreditCard, ShieldCheck, BadgePercent, Clock, FileCheck, UserCheck } from 'lucide-react';
+import { Car, Calculator, CreditCard, ShieldCheck, BadgePercent, Clock, FileCheck, UserCheck, Home, BarChart4 } from 'lucide-react';
 
 const ServicesPage = () => {
   const services = [
@@ -12,7 +11,7 @@ const ServicesPage = () => {
       description: 'Competitive interest rates for new car purchases with flexible repayment options.',
       icon: Car,
       benefits: [
-        'Low interest rates starting from 7.5%',
+        'Low interest rates starting from 8.5%',
         'Quick approval process',
         'Minimal documentation',
         'Flexible repayment terms up to 7 years'
@@ -30,6 +29,17 @@ const ServicesPage = () => {
       ]
     },
     {
+      title: 'Mortgage Loans',
+      description: 'Comprehensive mortgage solutions up to ₹50 crore for residential and commercial properties.',
+      icon: Home,
+      benefits: [
+        'Loans up to ₹50 crore available',
+        'Competitive interest rates',
+        'Flexible repayment options',
+        'Quick approval process'
+      ]
+    },
+    {
       title: 'EMI Options',
       description: 'Customized EMI plans tailored to your financial situation and comfort.',
       icon: Calculator,
@@ -42,13 +52,25 @@ const ServicesPage = () => {
     },
     {
       title: 'Insurance Advisory',
-      description: 'Expert guidance on choosing the right insurance coverage for your vehicle.',
+      description: 'Expert guidance on choosing the right insurance coverage for your vehicle and other needs.',
       icon: ShieldCheck,
       benefits: [
-        'Comprehensive coverage options',
-        'Competitive premium rates',
-        'Quick claim assistance',
-        'Renewal reminders and support'
+        'Vehicle insurance',
+        'Mediclaim insurance',
+        'Personal Accident Insurance',
+        'Travel insurance',
+        'Marine Insurance'
+      ]
+    },
+    {
+      title: 'Used Car Buy/Sell',
+      description: 'Complete assistance in buying or selling used cars with transparent valuation and paperwork support.',
+      icon: BarChart4,
+      benefits: [
+        'Fair market valuation',
+        'Paperwork assistance',
+        'Inspection services',
+        'Seamless ownership transfer'
       ]
     },
     {
@@ -63,17 +85,6 @@ const ServicesPage = () => {
       ]
     },
     {
-      title: 'Quick Approval',
-      description: 'Fast-track application process with minimal documentation for quick approval.',
-      icon: Clock,
-      benefits: [
-        'Same-day approval possible',
-        'Minimal documentation required',
-        'Digital application process',
-        'Quick disbursement of funds'
-      ]
-    },
-    {
       title: 'Documentation Assistance',
       description: 'Complete support with paperwork and registration for a hassle-free experience.',
       icon: FileCheck,
@@ -82,17 +93,6 @@ const ServicesPage = () => {
         'Help with insurance paperwork',
         'Guidance on loan documentation',
         'Support for vehicle registration'
-      ]
-    },
-    {
-      title: 'Personalized Consultation',
-      description: 'One-on-one consultation with our finance experts to find the best solution for you.',
-      icon: UserCheck,
-      benefits: [
-        'Customized financial advice',
-        'Comprehensive assessment of options',
-        'Future planning assistance',
-        'Regular portfolio reviews'
       ]
     }
   ];

@@ -17,7 +17,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/6a52a1ab-e90c-42c0-918f-9671fdd350b5.png" 
             alt="Shlok Motors & Finance Logo" 
-            className="h-14 md:h-14 w-auto" // Increased from h-12 to h-16/h-20
+            className="h-14 md:h-16 w-auto"
           />
         </Link>
 
@@ -34,6 +34,9 @@ const Navbar = () => {
           </Link>
           <Link to="/insurance" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             Insurance
+          </Link>
+          <Link to="/inquiry" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
+            Used Cars
           </Link>
           <Link to="/contact" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             Contact
@@ -77,6 +80,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Insurance
+            </Link>
+            <Link 
+              to="/inquiry" 
+              className="text-gray-700 hover:text-finance-primary font-medium py-2 transition-colors"
+              onClick={toggleMenu}
+            >
+              Used Cars
             </Link>
             <Link 
               to="/contact" 
