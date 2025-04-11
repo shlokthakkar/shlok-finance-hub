@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Star } from 'lucide-react';
 
@@ -6,8 +7,7 @@ const InsurancePartners = () => {
     { name: "Tata AIG General Insurance Co Ltd", primary: true },
     { name: "ICICI Lombard", primary: false },
     { name: "Bajaj Allianz", primary: false },
-    { name: "HDFC ERGO", primary: false },
-    { name: "Reliance General Insurance", primary: false }
+    { name: "HDFC ERGO", primary: false }
   ];
 
   return (

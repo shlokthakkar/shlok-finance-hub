@@ -56,27 +56,6 @@ const AchievementsSection = () => {
             </Card>
           ))}
         </div>
-
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <img 
-              src="https://images.unsplash.com/photo-1559024094-4a1e4495c3c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
-              alt="Award Ceremony" 
-              className="w-full h-64 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-lg font-semibold mb-2">Receiving Award from Tata AIG</h3>
-            <p className="text-gray-600">Recognition ceremony for outstanding performance in insurance advisory services.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <img 
-              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
-              alt="Certificate Presentation" 
-              className="w-full h-64 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-lg font-semibold mb-2">Excellence Certificate from ICICI Bank</h3>
-            <p className="text-gray-600">Presented for achieving highest car loan disbursement in the region.</p>
-          </div>
-        </div>
       </div>
     </section>
   );

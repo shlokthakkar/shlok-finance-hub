@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Crown, Award } from 'lucide-react';
 
@@ -13,9 +14,9 @@ const LoanPartners = () => {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Car Loan Partners</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Loan Partners</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We collaborate with trusted financial institutions to provide you with the best car loan options.
+            We collaborate with trusted financial institutions to provide you with the best loan options for your needs.
           </p>
         </div>
         
@@ -33,7 +34,7 @@ const LoanPartners = () => {
                 <Award className="h-12 w-12 text-finance-primary mb-4" />
                 <h3 className="text-2xl font-bold text-finance-primary mb-2">{loanPartners[0].name}</h3>
                 <p className="text-gray-600 text-center">
-                  Our primary car loan partner offering competitive interest rates starting at 8.5% and flexible repayment options.
+                  Our primary loan partner offering competitive interest rates starting at 8.5% and flexible repayment options for car loans, mortgages, and more.
                 </p>
               </div>
             </div>

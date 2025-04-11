@@ -36,9 +36,6 @@ const Navbar = () => {
             Insurance
           </Link>
           <Link to="/contact" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
-            Used Cars
-          </Link>
-          <Link to="/contact" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             Contact
           </Link>
         </nav>
@@ -80,13 +77,6 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Insurance
-            </Link>
-            <Link 
-              to="/contact" 
-              className="text-gray-700 hover:text-finance-primary font-medium py-2 transition-colors"
-              onClick={toggleMenu}
-            >
-              Used Cars
             </Link>
             <Link 
               to="/contact" 
