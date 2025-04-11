@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -130,6 +131,12 @@ const ServicesPage = () => {
               />
             ))}
           </div>
+          
+          <div className="flex justify-center mt-8">
+            <Button asChild size="lg" className="bg-finance-primary hover:bg-finance-primary/90 text-white">
+              <Link to="/contact">Contact Us Now</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -173,6 +180,85 @@ const ServicesPage = () => {
                 Complete the paperwork and drive away in your new car with confidence.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Documents Required Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Documents Required</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Here's what you'll need to provide for a smooth application process.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-xl font-semibold mb-4 text-finance-primary">For Salaried Individuals</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <FileCheck className="h-5 w-5 text-finance-primary mt-0.5 mr-2 flex-shrink-0" />
+                  <span>Identity Proof (Aadhar Card, PAN Card, Passport, Driving License)</span>
+                </li>
+                <li className="flex items-start">
+                  <FileCheck className="h-5 w-5 text-finance-primary mt-0.5 mr-2 flex-shrink-0" />
+                  <span>Address Proof (Utility Bills, Rental Agreement)</span>
+                </li>
+                <li className="flex items-start">
+                  <FileCheck className="h-5 w-5 text-finance-primary mt-0.5 mr-2 flex-shrink-0" />
+                  <span>Income Proof (Latest 3 months' Salary Slips)</span>
+                </li>
+                <li className="flex items-start">
+                  <FileCheck className="h-5 w-5 text-finance-primary mt-0.5 mr-2 flex-shrink-0" />
+                  <span>Bank Statements (Last 6 months)</span>
+                </li>
+                <li className="flex items-start">
+                  <FileCheck className="h-5 w-5 text-finance-primary mt-0.5 mr-2 flex-shrink-0" />
+                  <span>Form 16 or IT Returns (Last 2 years)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-xl font-semibold mb-4 text-finance-primary">For Self-Employed Individuals</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <FileCheck className="h-5 w-5 text-finance-primary mt-0.5 mr-2 flex-shrink-0" />
+                  <span>Identity Proof (Aadhar Card, PAN Card, Passport, Driving License)</span>
+                </li>
+                <li className="flex items-start">
+                  <FileCheck className="h-5 w-5 text-finance-primary mt-0.5 mr-2 flex-shrink-0" />
+                  <span>Address Proof (Utility Bills, Property Documents)</span>
+                </li>
+                <li className="flex items-start">
+                  <FileCheck className="h-5 w-5 text-finance-primary mt-0.5 mr-2 flex-shrink-0" />
+                  <span>Business Proof (GST Registration, Shop Act License)</span>
+                </li>
+                <li className="flex items-start">
+                  <FileCheck className="h-5 w-5 text-finance-primary mt-0.5 mr-2 flex-shrink-0" />
+                  <span>Bank Statements (Last 12 months)</span>
+                </li>
+                <li className="flex items-start">
+                  <FileCheck className="h-5 w-5 text-finance-primary mt-0.5 mr-2 flex-shrink-0" />
+                  <span>IT Returns (Last 3 years)</span>
+                </li>
+                <li className="flex items-start">
+                  <FileCheck className="h-5 w-5 text-finance-primary mt-0.5 mr-2 flex-shrink-0" />
+                  <span>Profit & Loss Account and Balance Sheet</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-gray-600 mb-4">
+              Additional documents may be required based on specific circumstances and lender requirements.
+            </p>
+            <Button asChild className="bg-finance-primary hover:bg-finance-primary/90 text-white">
+              <Link to="/contact">Have Questions? Contact Us</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -232,10 +318,10 @@ const ServicesPage = () => {
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <Button asChild size="lg" className="bg-white text-finance-primary hover:bg-gray-100">
-              <Link to="/inquiry">Get a Quote</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
             <Button asChild size="lg" className="bg-white text-finance-primary hover:bg-gray-100">
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact">Get in Touch</Link>
             </Button>
           </div>
         </div>

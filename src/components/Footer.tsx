@@ -85,7 +85,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/inquiry" className="text-gray-300 hover:text-white transition-colors">
-                  Get a Quote
+                  Contact Us
                 </Link>
               </li>
             </ul>

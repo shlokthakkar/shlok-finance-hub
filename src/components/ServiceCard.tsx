@@ -32,7 +32,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon: Ico
       </CardContent>
       <CardFooter>
         <Button asChild className="w-full bg-finance-primary hover:bg-finance-primary/90">
-          <Link to="/inquiry">Inquire Now</Link>
+          <Link to="/contact">Contact Us</Link>
         </Button>
       </CardFooter>
     </Card>
