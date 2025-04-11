@@ -1,8 +1,6 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Link } from 'react-router-dom';
 import { LucideIcon } from 'lucide-react';
 
 interface ServiceCardProps {
@@ -30,11 +28,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon: Ico
           ))}
         </ul>
       </CardContent>
-      <CardFooter>
-        <Button asChild className="w-full bg-finance-primary hover:bg-finance-primary/90">
-          <Link to="/contact">Contact Us</Link>
-        </Button>
-      </CardFooter>
     </Card>
   );
 };

@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -10,7 +9,6 @@ import ReviewCard from '@/components/ReviewCard';
 import InsurancePartners from '@/components/InsurancePartners';
 import LoanPartners from '@/components/LoanPartners';
 import UsedCarsSection from '@/components/UsedCarsSection';
-import AchievementsSection from '@/components/AchievementsSection';
 import { ChevronLeft, ChevronRight, Car, Calculator, Shield, Award, ArrowRight, Send, Home, BarChart4 } from 'lucide-react';
 
 const HomePage = () => {
@@ -267,10 +265,7 @@ const HomePage = () => {
       {/* Loan Partners - Moved between Insurance Partners and Achievements */}
       <LoanPartners />
 
-      {/* Achievements Section */}
-      <AchievementsSection />
-
-      {/* Quick Inquiry Form - Removed WhatsApp Contact */}
+      {/* Quick Inquiry Form */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">

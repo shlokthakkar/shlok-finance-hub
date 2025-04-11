@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import AchievementsSection from '@/components/AchievementsSection';
 import { Users, Target, Shield, TrendingUp } from 'lucide-react';
 
 const AboutPage = () => {
@@ -86,6 +86,9 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Achievements Section - Moved from HomePage */}
+      <AchievementsSection />
 
       {/* Our Values */}
       <section className="py-16">

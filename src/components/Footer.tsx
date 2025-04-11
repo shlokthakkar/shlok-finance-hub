@@ -83,11 +83,6 @@ const Footer = () => {
                   Insurance Advisory
                 </Link>
               </li>
-              <li>
-                <Link to="/inquiry" className="text-gray-300 hover:text-white transition-colors">
-                  Contact Us
-                </Link>
-              </li>
             </ul>
           </div>
 

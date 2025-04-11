@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -45,7 +44,7 @@ const ServicesPage = () => {
       description: 'Customized EMI plans tailored to your financial situation and comfort.',
       icon: Calculator,
       benefits: [
-        'Flexible EMI durations from 1-7 years',
+        'Flexible EMI durations from 1-20 years depending on the type of loan',
         'Step-up and step-down EMI options',
         'No prepayment penalties',
         'Balloon payment options available'
@@ -79,8 +78,8 @@ const ServicesPage = () => {
       description: 'Restructure your existing car loan for better terms and lower rates.',
       icon: BadgePercent,
       benefits: [
-        'Lower your current interest rate',
-        'Reduce monthly payments',
+        'Up to 200% of the asset value as loan',
+        'Best possible interest rates',
         'Consolidate multiple car loans',
         'Improve cash flow with extended terms'
       ]
@@ -256,9 +255,6 @@ const ServicesPage = () => {
             <p className="text-gray-600 mb-4">
               Additional documents may be required based on specific circumstances and lender requirements.
             </p>
-            <Button asChild className="bg-finance-primary hover:bg-finance-primary/90 text-white">
-              <Link to="/contact">Have Questions? Contact Us</Link>
-            </Button>
           </div>
         </div>
       </section>
