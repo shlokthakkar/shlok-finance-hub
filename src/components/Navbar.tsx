@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link to="/insurance" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             Insurance
           </Link>
-          <Link to="/inquiry" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
+          <Link to="/contact" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             Used Cars
           </Link>
           <Link to="/contact" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
@@ -82,7 +82,7 @@ const Navbar = () => {
               Insurance
             </Link>
             <Link 
-              to="/inquiry" 
+              to="/contact" 
               className="text-gray-700 hover:text-finance-primary font-medium py-2 transition-colors"
               onClick={toggleMenu}
             >

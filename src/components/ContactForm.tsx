@@ -154,6 +154,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ type = 'contact' }) => {
               <SelectContent>
                 <SelectItem value="car-loan">Car Loan</SelectItem>
                 <SelectItem value="used-car-finance">Used Car Finance</SelectItem>
+                <SelectItem value="used-cars">Used Cars (Buy/Sell)</SelectItem>
+                <SelectItem value="mortgage-loan">Mortgage Loan</SelectItem>
                 <SelectItem value="emi-options">EMI Options</SelectItem>
                 <SelectItem value="insurance-advisory">Insurance Advisory</SelectItem>
                 <SelectItem value="other">Other</SelectItem>

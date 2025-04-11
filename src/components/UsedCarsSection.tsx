@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from 'react-router-dom';
-import { Car, RefreshCw, FileCheck, DollarSign } from 'lucide-react';
+import { Car, FileCheck, DollarSign } from 'lucide-react';
 
 const UsedCarsSection = () => {
   return (
@@ -47,7 +47,7 @@ const UsedCarsSection = () => {
                 </li>
               </ul>
               <Button asChild className="w-full bg-finance-primary hover:bg-finance-primary/90">
-                <Link to="/inquiry">Find a Used Car</Link>
+                <Link to="/contact">Contact Us</Link>
               </Button>
             </CardContent>
           </Card>
@@ -82,7 +82,7 @@ const UsedCarsSection = () => {
                 </li>
               </ul>
               <Button asChild className="w-full bg-finance-primary hover:bg-finance-primary/90">
-                <Link to="/inquiry">Sell Your Car</Link>
+                <Link to="/contact">Contact Us</Link>
               </Button>
             </CardContent>
           </Card>
