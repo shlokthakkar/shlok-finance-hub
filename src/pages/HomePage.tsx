@@ -10,6 +10,7 @@ import InsurancePartners from '@/components/InsurancePartners';
 import LoanPartners from '@/components/LoanPartners';
 import UsedCarsSection from '@/components/UsedCarsSection';
 import { ChevronLeft, ChevronRight, Car, Calculator, Shield, Award, ArrowRight, Send, Home, BarChart4 } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const HomePage = () => {
   const { toast } = useToast();
@@ -28,49 +29,70 @@ const HomePage = () => {
     }
   };
 
-  const handleInquirySubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    // In a real app, this would send data to your backend
+const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  try {
+    await emailjs.sendForm(
+      'service_q06x9te',
+      'template_jeviv5f',
+      formRef.current!,
+      'mIUMFonpQ4kWWZf5k'
+    );
+
     toast({
       title: "Inquiry Submitted",
       description: "We've received your inquiry and will contact you soon.",
     });
-    
-    // Reset form
+
     if (formRef.current) {
       formRef.current.reset();
     }
-  };
+
+  } catch (error) {
+    console.error('EmailJS error:', error);
+    toast({
+      title: "Submission Failed",
+      description: "Something went wrong. Please try again later.",
+      variant: "destructive",
+    });
+  }
+};
 
   const reviews = [
     {
-      name: 'Rajesh Sharma',
-      position: 'Business Owner',
+      name: 'Dhiren Shah',
+      position: 'Entrepreneur',
       review: 'Shlok Motors helped me finance my dream car at amazing interest rates. Their team was extremely helpful throughout the process.',
       rating: 5,
     },
     {
-      name: 'Priya Patel',
-      position: 'Software Engineer',
+      name: 'Usmanbhai Ghanchi',
+      position: 'Business Owner',
       review: 'I was looking for a used car and their finance options were the best in the market. Quick processing and minimum documentation.',
       rating: 5,
     },
     {
-      name: 'Amit Singh',
-      position: 'Doctor',
+      name: 'Nidaan Chemicals Limited',
+      position: 'Business',
       review: 'Their insurance advisory saved me thousands of rupees. Highly recommended for anyone looking for car insurance solutions.',
       rating: 4,
     },
     {
-      name: 'Meera Desai',
-      position: 'Teacher',
+      name: 'Khamshibhai Bar',
+      position: 'Business Owner',
       review: 'As a first-time car buyer, I was nervous about financing. Shlok made it incredibly easy and stress-free for me.',
       rating: 5,
     },
     {
-      name: 'Vikram Joshi',
+      name: 'Mukesh Suthar',
       position: 'Sales Executive',
+      review: 'Excellent EMI options tailored to my budget. Their team is very knowledgeable and friendly.',
+      rating: 4,
+    },
+    {
+      name: 'Sunil Bhavasar',
+      position: 'Business Owner',
       review: 'Excellent EMI options tailored to my budget. Their team is very knowledgeable and friendly.',
       rating: 4,
     },
@@ -296,6 +318,7 @@ const HomePage = () => {
                   <form ref={formRef} onSubmit={handleInquirySubmit} className="space-y-4">
                     <div>
                       <Input
+                        name = "name"
                         placeholder="Your Name"
                         className="w-full"
                         required
@@ -303,12 +326,14 @@ const HomePage = () => {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <Input
+                        name = "email"
                         type="email"
                         placeholder="Email Address"
                         className="w-full"
                         required
                       />
                       <Input
+                        name = "phone"
                         type="tel"
                         placeholder="Phone Number"
                         className="w-full"
@@ -316,7 +341,8 @@ const HomePage = () => {
                       />
                     </div>
                     <div>
-                      <select 
+                      <select
+                        name="service"
                         className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm" 
                         required
                       >
@@ -331,6 +357,7 @@ const HomePage = () => {
                     </div>
                     <div>
                       <Textarea
+                        name="message"
                         placeholder="Your Message"
                         className="w-full"
                         rows={4}

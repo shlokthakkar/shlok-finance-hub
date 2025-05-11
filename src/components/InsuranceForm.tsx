@@ -16,6 +16,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
+import emailjs from '@emailjs/browser';
 
 const InsuranceForm = () => {
   const { toast } = useToast();
@@ -36,57 +37,94 @@ const InsuranceForm = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!date) {
-      toast({
-        title: "Error",
-        description: "Please select your insurance expiry date.",
-        variant: "destructive",
-      });
-      return;
-    }
-    
-    setIsSubmitting(true);
 
-    try {
-      // Mock API call delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      const completeData = {
-        ...formData,
-        expiryDate: date.toISOString().split('T')[0]
-      };
-      
-      console.log('Insurance form submitted:', completeData);
-      
-      toast({
-        title: "Success!",
-        description: "We've registered your insurance details. We'll remind you before your coverage expires.",
-        duration: 5000,
-      });
-      
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        carModel: ''
-      });
-      setDate(undefined);
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      toast({
-        title: "Error",
-        description: "There was a problem registering your insurance details. Please try again.",
-        variant: "destructive",
-        duration: 5000,
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+  const generateGoogleCalendarLink = (eventTitle: string, start: Date, end: Date, description: string) => {
+    const format = (date: Date) =>
+      date.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+
+    return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${format(start)}/${format(end)}&details=${encodeURIComponent(description)}&sf=true&output=xml`;
   };
+
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  if (!date) {
+    toast({
+      title: "Error",
+      description: "Please select your insurance expiry date.",
+      variant: "destructive",
+    });
+    return;
+  }
+
+  setIsSubmitting(true);
+
+  try {
+    // Mock delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    const reminderDate = new Date(date);
+    reminderDate.setMonth(reminderDate.getMonth() - 1); // 1 month before
+
+    const startTime = new Date(reminderDate.setHours(10, 0));
+    const endTime = new Date(reminderDate.setHours(11, 0));
+
+    const calendarLink = generateGoogleCalendarLink(
+      `Insurance Renewal: ${formData.carModel}`,
+      startTime,
+      endTime,
+      `Reminder to renew insurance for ${formData.carModel}`
+    );
+
+    // Send email with EmailJS
+    await emailjs.send(
+      'service_q06x9te',
+      'template_2tqgk66',
+      {
+        name: formData.name,
+        email: formData.email,
+        expiry_date: date.toDateString(),
+        car_model: formData.carModel,
+        calendar_link: calendarLink,
+      },
+      'mIUMFonpQ4kWWZf5k'
+    );
+
+    toast({
+      title: "Success!",
+      description: (
+        <span>
+          We've registered your insurance.{" "}
+          <a href={calendarLink} target="_blank" className="underline text-blue-600">
+            Add to Google Calendar
+          </a>
+        </span>
+      ),
+      duration: 8000,
+    });
+
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      carModel: ''
+    });
+    setDate(undefined);
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    toast({
+      title: "Error",
+      description: "There was a problem registering your insurance details. Please try again.",
+      variant: "destructive",
+      duration: 5000,
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   return (
     <Card>
