@@ -71,10 +71,10 @@ const handleSubmit = async (e: React.FormEvent) => {
     const endTime = new Date(reminderDate.setHours(11, 0));
 
     const calendarLink = generateGoogleCalendarLink(
-      `Insurance Renewal: ${formData.carModel}`,
+      `Insurance Renewal: ${formData.name} Mobile: ${formData.phone} `,
       startTime,
       endTime,
-      `Reminder to renew insurance for ${formData.carModel}`
+      `Reminder to renew insurance for ${formData.carModel} for ${formData.name} Mobile: ${formData.phone}`
     );
 
     // Send email with EmailJS
@@ -85,6 +85,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         name: formData.name,
         email: formData.email,
         expiry_date: date.toDateString(),
+        phone: formData.phone,
         car_model: formData.carModel,
         calendar_link: calendarLink,
       },
