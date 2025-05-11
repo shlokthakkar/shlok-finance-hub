@@ -1,8 +1,10 @@
+# Allow major bots full access
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 5
 
 User-agent: Twitterbot
 Allow: /
@@ -10,7 +12,14 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+# Allow all other bots, but slow them down slightly
 User-agent: *
 Allow: /
+Crawl-delay: 10
 
+# Optional: Disallow internal folders (uncomment if needed)
+# Disallow: /admin/
+# Disallow: /test/
+
+# Sitemap location
 Sitemap: https://shlokmotorsandfinance.vercel.app/sitemap.xml
