@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
-import emailjs from "@emailjs/browser";
 import {
   Card,
   CardContent,
@@ -55,20 +54,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ type = 'contact' }) => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Here you would typically send the data to your backend API
+    // For now, we'll mock a successful submission
 
     try {
-        const result = await emailjs.send(
-        "service_q06x9te",
-        "template_jeviv5f",
-        {
-           name : formData.name,
-           email : formData.email,
-           phone : formData.phone,
-           service: formData.service,
-           message: formData.message,
-        },
-        "mIUMFonpQ4kWWZf5k"
-        )
+      // Mock API call delay
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       console.log('Form submitted:', formData);
