@@ -22,4 +22,4 @@ Crawl-delay: 10
 # Disallow: /test/
 
 # Sitemap location
-Sitemap: https://shlokmotorsandfinance.vercel.app/sitemap.xml
+Sitemap: https://shlokmotorsandfinance.in/sitemap.xml
