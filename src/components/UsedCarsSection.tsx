@@ -12,7 +12,7 @@ const UsedCarsSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Used Car Services</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Complete assistance for buying and selling pre-owned vehicles with transparent valuation and financing options.
+            Complete assistance for buying and selling trusted used cars with transparent valuation and financing options.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ const UsedCarsSection = () => {
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <FileCheck className="h-5 w-5 text-finance-primary mr-2 mt-0.5" />
-                  <span>Access a wide network of verified used cars</span>
+                  <span>Access a wide network of trusted used cars</span>
                 </li>
                 <li className="flex items-start">
                   <FileCheck className="h-5 w-5 text-finance-primary mr-2 mt-0.5" />

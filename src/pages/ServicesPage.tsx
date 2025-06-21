@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -8,10 +9,10 @@ const ServicesPage = () => {
   const services = [
     {
       title: 'Car Loans',
-      description: 'Competitive interest rates for new car purchases with flexible repayment options.',
+      description: 'Minimum interest rates starting from 9% for new cars and competitive rates for used cars with flexible repayment options.',
       icon: Car,
       benefits: [
-        'Low interest rates starting from 8.5%',
+        'Low interest rates starting from 9% for new cars',
         'Quick approval process',
         'Minimal documentation',
         'Flexible repayment terms up to 7 years'
@@ -19,7 +20,7 @@ const ServicesPage = () => {
     },
     {
       title: 'Used Car Finance',
-      description: 'Special financing options for pre-owned vehicles to fit your budget.',
+      description: 'Special financing options for trusted used cars to fit your budget.',
       icon: CreditCard,
       benefits: [
         'Financing for vehicles up to 10 years old',
@@ -29,8 +30,8 @@ const ServicesPage = () => {
       ]
     },
     {
-      title: 'Mortgage Loans',
-      description: 'Comprehensive mortgage solutions up to ₹50 crore for residential and commercial properties.',
+      title: 'Mortgage Loan Solutions',
+      description: 'Comprehensive mortgage loan solutions up to ₹50 crore for residential and commercial properties.',
       icon: Home,
       benefits: [
         'Loans up to ₹50 crore available',
@@ -46,8 +47,8 @@ const ServicesPage = () => {
       benefits: [
         'Flexible EMI durations from 1-20 years depending on the type of loan',
         'Step-up and step-down EMI options',
-        'No prepayment penalties',
-        'Balloon payment options available'
+        'No prepayment* penalties (*T&C apply)',
+        'Competitive processing fees'
       ]
     },
     {
@@ -64,7 +65,7 @@ const ServicesPage = () => {
     },
     {
       title: 'Used Car Buy/Sell',
-      description: 'Complete assistance in buying or selling used cars with transparent valuation and paperwork support.',
+      description: 'Complete assistance in buying or selling trusted used cars with transparent valuation and paperwork support.',
       icon: BarChart4,
       benefits: [
         'Fair market valuation',
@@ -274,7 +275,7 @@ const ServicesPage = () => {
               <h3 className="text-xl font-semibold mb-2">What documents do I need for a car loan?</h3>
               <p className="text-gray-600">
                 Typically, you'll need your identity proof, address proof, income proof (salary slips or IT returns), 
-                bank statements for the last 3 months, and a copy of your driver's license.
+                bank statements for the last 3 months, and a copy of your Driving License.
               </p>
             </div>
 
@@ -289,16 +290,8 @@ const ServicesPage = () => {
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-xl font-semibold mb-2">Can I get a loan for a second-hand car?</h3>
               <p className="text-gray-600">
-                Yes, we offer financing options for pre-owned vehicles. The car should not be more than 10 years old 
+                Yes, we offer financing options for trusted used cars. The car should not be more than 10 years old 
                 by the end of the loan tenure, and we'll need to assess the vehicle's condition and value.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-2">Is there a prepayment penalty?</h3>
-              <p className="text-gray-600">
-                We do not charge any prepayment penalties if you wish to close your loan early. You can repay your 
-                loan at any time without additional charges.
               </p>
             </div>
           </div>

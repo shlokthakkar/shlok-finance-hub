@@ -1,3 +1,4 @@
+
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -9,7 +10,7 @@ import ReviewCard from '@/components/ReviewCard';
 import InsurancePartners from '@/components/InsurancePartners';
 import LoanPartners from '@/components/LoanPartners';
 import UsedCarsSection from '@/components/UsedCarsSection';
-import { ChevronLeft, ChevronRight, Car, Calculator, Shield, Award, ArrowRight, Send, Home, BarChart4 } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Car, Calculator, Shield, Award, ArrowRight, Send, Home, BarChart4, Star } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 const HomePage = () => {
@@ -63,37 +64,37 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     {
       name: 'Dhiren Shah',
       position: 'Entrepreneur',
-      review: 'Shlok Motors helped me finance my dream car at amazing interest rates. Their team was extremely helpful throughout the process.',
+      review: 'Shlok Motors helped me finance my dream Mercedes at amazing interest rates. Their team was extremely helpful throughout the new car purchase process.',
       rating: 5,
     },
     {
       name: 'Usmanbhai Ghanchi',
       position: 'Business Owner',
-      review: 'I was looking for a used car and their finance options were the best in the market. Quick processing and minimum documentation.',
+      review: 'I was looking to buy a new BMW and their finance options were the best in the market. Quick processing and minimum documentation for new car loans.',
       rating: 5,
     },
     {
       name: 'Nidaan Chemicals Limited',
       position: 'Business',
-      review: 'Their insurance advisory saved me thousands of rupees. Highly recommended for anyone looking for car insurance solutions.',
+      review: 'Their insurance advisory saved me thousands of rupees on my new car insurance. Highly recommended for anyone looking for car insurance solutions.',
       rating: 4,
     },
     {
-      name: 'Khamshibhai Bar',
+      name: 'Khamshibhai Brar',
       position: 'Business Owner',
-      review: 'As a first-time car buyer, I was nervous about financing. Shlok made it incredibly easy and stress-free for me.',
+      review: 'As a first-time new car buyer, I was nervous about financing my Mercedes. Shlok made it incredibly easy and stress-free for me.',
       rating: 5,
     },
     {
       name: 'Mukesh Suthar',
       position: 'Sales Executive',
-      review: 'Excellent EMI options tailored to my budget. Their team is very knowledgeable and friendly.',
+      review: 'Excellent EMI options tailored to my budget for my new car purchase. Their team is very knowledgeable and friendly.',
       rating: 4,
     },
     {
       name: 'Sunil Bhavasar',
       position: 'Business Owner',
-      review: 'Excellent EMI options tailored to my budget. Their team is very knowledgeable and friendly.',
+      review: 'Got my new BMW financed with excellent EMI options tailored to my budget. Their team is very knowledgeable and friendly.',
       rating: 4,
     },
   ];
@@ -150,7 +151,7 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold mb-2">Car Loans</h3>
                     <p className="text-gray-600">
-                      Get competitive interest rates starting at 8.5% on new and used car financing with flexible repayment options.
+                      Minimum interest rates starting at 9% for new cars and competitive rates for used cars with flexible repayment options.
                     </p>
                   </div>
                 </div>
@@ -169,9 +170,9 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                     <Home className="h-7 w-7 text-finance-primary" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2">Mortgage Loans</h3>
+                    <h3 className="text-xl font-semibold mb-2">Mortgage Loan Solutions</h3>
                     <p className="text-gray-600">
-                      Mortgage solutions up to ₹50 crore for residential and commercial properties with flexible terms.
+                      Mortgage loan solutions up to ₹50 crore for residential and commercial properties with flexible terms.
                     </p>
                   </div>
                 </div>
@@ -215,7 +216,7 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold mb-2">Used Car Services</h3>
                     <p className="text-gray-600">
-                      Complete assistance in buying and selling used cars with valuation, documentation, and financing support.
+                      Complete assistance in buying and selling trusted used cars with valuation, documentation, and financing support.
                     </p>
                   </div>
                 </div>
@@ -236,8 +237,9 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold mb-2">EMI Options</h3>
                     <p className="text-gray-600">
-                      Customize your EMI plans based on your budget and financial goals with our flexible options.
+                      Customize your EMI plans based on your budget and financial goals with our flexible options. No prepayment* penalties.
                     </p>
+                    <p className="text-xs text-gray-500 mt-2">*T&C apply</p>
                   </div>
                 </div>
                 <div className="mt-auto">
@@ -278,6 +280,98 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         </div>
       </section>
 
+      {/* New Car Services Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">New Car Services</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Experience luxury and performance with our comprehensive new car financing solutions for premium brands.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="h-12 w-12 rounded-full bg-finance-accent flex items-center justify-center mx-auto mb-4">
+                  <Star className="h-6 w-6 text-finance-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Wide Selection</h3>
+                <p className="text-gray-600">
+                  Access to premium brands like Mercedes, BMW, and other luxury vehicles with competitive financing options.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="h-12 w-12 rounded-full bg-finance-accent flex items-center justify-center mx-auto mb-4">
+                  <Car className="h-6 w-6 text-finance-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Easy Approvals</h3>
+                <p className="text-gray-600">
+                  Quick car loan approvals with low-interest options starting at 9% for new cars.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="h-12 w-12 rounded-full bg-finance-accent flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-6 w-6 text-finance-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Personalized Recommendations</h3>
+                <p className="text-gray-600">
+                  Our experts provide personalized car recommendations based on your preferences and budget.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="h-12 w-12 rounded-full bg-finance-accent flex items-center justify-center mx-auto mb-4">
+                  <Shield className="h-6 w-6 text-finance-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Trusted Partnerships</h3>
+                <p className="text-gray-600">
+                  We work with authorized dealerships to ensure genuine vehicles and transparent pricing.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="h-12 w-12 rounded-full bg-finance-accent flex items-center justify-center mx-auto mb-4">
+                  <Calculator className="h-6 w-6 text-finance-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Same-Day Processing</h3>
+                <p className="text-gray-600">
+                  Quick paperwork processing and delivery arrangements to get you on the road faster.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="h-12 w-12 rounded-full bg-finance-accent flex items-center justify-center mx-auto mb-4">
+                  <ArrowRight className="h-6 w-6 text-finance-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">End-to-End Service</h3>
+                <p className="text-gray-600">
+                  Complete assistance from car selection to loan approval and delivery coordination.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-8">
+            <Button asChild className="bg-finance-primary hover:bg-finance-primary/90 text-white">
+              <Link to="/contact">Explore New Cars</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Used Cars Section */}
       <UsedCarsSection />
 
@@ -305,7 +399,7 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                     </div>
                     <div className="flex items-center space-x-3">
                       <Home className="h-5 w-5" />
-                      <span>Mortgage Loans up to ₹50 Cr</span>
+                      <span>Mortgage Loan Solutions up to ₹50 Cr</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <Shield className="h-5 w-5" />
