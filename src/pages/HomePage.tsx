@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -30,47 +29,47 @@ const HomePage = () => {
     }
   };
 
-const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
+  const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-  try {
-    await emailjs.sendForm(
-      'service_q06x9te',
-      'template_jeviv5f',
-      formRef.current!,
-      'mIUMFonpQ4kWWZf5k'
-    );
+    try {
+      await emailjs.sendForm(
+        'service_q06x9te',
+        'template_jeviv5f',
+        formRef.current!,
+        'mIUMFonpQ4kWWZf5k'
+      );
 
-    toast({
-      title: "Inquiry Submitted",
-      description: "We've received your inquiry and will contact you soon.",
-    });
+      toast({
+        title: "Inquiry Submitted",
+        description: "We've received your inquiry and will contact you soon.",
+      });
 
-    if (formRef.current) {
-      formRef.current.reset();
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      toast({
+        title: "Submission Failed",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      });
     }
-
-  } catch (error) {
-    console.error('EmailJS error:', error);
-    toast({
-      title: "Submission Failed",
-      description: "Something went wrong. Please try again later.",
-      variant: "destructive",
-    });
-  }
-};
+  };
 
   const reviews = [
     {
       name: 'Dhiren Shah',
       position: 'Entrepreneur',
-      review: 'Shlok Motors helped me finance my dream Mercedes at amazing interest rates. Their team was extremely helpful throughout the new car purchase process.',
+      review: 'Shlok Motors helped me finance my dream car at amazing interest rates. Their team was extremely helpful throughout the new car purchase process.',
       rating: 5,
     },
     {
       name: 'Usmanbhai Ghanchi',
       position: 'Business Owner',
-      review: 'I was looking to buy a new BMW and their finance options were the best in the market. Quick processing and minimum documentation for new car loans.',
+      review: 'I was looking to buy a new car and their finance options were the best in the market. Quick processing and minimum documentation for new car loans.',
       rating: 5,
     },
     {
@@ -82,7 +81,7 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     {
       name: 'Khamshibhai Brar',
       position: 'Business Owner',
-      review: 'As a first-time new car buyer, I was nervous about financing my Mercedes. Shlok made it incredibly easy and stress-free for me.',
+      review: 'As a first-time new car buyer, I was nervous about financing my new car. Shlok made it incredibly easy and stress-free for me.',
       rating: 5,
     },
     {
@@ -94,7 +93,7 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     {
       name: 'Sunil Bhavasar',
       position: 'Business Owner',
-      review: 'Got my new BMW financed with excellent EMI options tailored to my budget. Their team is very knowledgeable and friendly.',
+      review: 'Got my new car financed with excellent EMI options tailored to my budget. Their team is very knowledgeable and friendly.',
       rating: 4,
     },
   ];
@@ -286,7 +285,7 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">New Car Services</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Experience luxury and performance with our comprehensive new car financing solutions for premium brands.
+              Experience luxury and performance with our comprehensive new car financing solutions for all brands.
             </p>
           </div>
 
@@ -298,7 +297,7 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Wide Selection</h3>
                 <p className="text-gray-600">
-                  Access to premium brands like Mercedes, BMW, and other luxury vehicles with competitive financing options.
+                  Access to all brands including premium cars like Mercedes, BMW, as well as popular brands like Hyundai, Maruti, Tata, and other affordable options with competitive financing.
                 </p>
               </CardContent>
             </Card>
@@ -342,18 +341,6 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             <Card className="h-full hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6 text-center">
                 <div className="h-12 w-12 rounded-full bg-finance-accent flex items-center justify-center mx-auto mb-4">
-                  <Calculator className="h-6 w-6 text-finance-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Same-Day Processing</h3>
-                <p className="text-gray-600">
-                  Quick paperwork processing and delivery arrangements to get you on the road faster.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="h-full hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-6 text-center">
-                <div className="h-12 w-12 rounded-full bg-finance-accent flex items-center justify-center mx-auto mb-4">
                   <ArrowRight className="h-6 w-6 text-finance-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">End-to-End Service</h3>
@@ -362,12 +349,6 @@ const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                 </p>
               </CardContent>
             </Card>
-          </div>
-
-          <div className="text-center mt-8">
-            <Button asChild className="bg-finance-primary hover:bg-finance-primary/90 text-white">
-              <Link to="/contact">Explore New Cars</Link>
-            </Button>
           </div>
         </div>
       </section>
