@@ -1,3 +1,4 @@
+
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -9,7 +10,7 @@ import ReviewCard from '@/components/ReviewCard';
 import InsurancePartners from '@/components/InsurancePartners';
 import LoanPartners from '@/components/LoanPartners';
 import UsedCarsSection from '@/components/UsedCarsSection';
-import { ChevronLeft, ChevronRight, Car, Calculator, Shield, Award, ArrowRight, Send, Home, BarChart4, Star } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Car, Calculator, Shield, Award, ArrowRight, Send, Home, BarChart4, Star, Clock } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 const HomePage = () => {
@@ -63,7 +64,7 @@ const HomePage = () => {
     {
       name: 'Dhiren Shah',
       position: 'Entrepreneur',
-      review: 'Shlok Motors helped me finance my dream car at amazing interest rates. Their team was extremely helpful throughout the new car purchase process.',
+      review: 'Shlok Motors helped me finance my new car at amazing interest rates. Their team was extremely helpful throughout the new car purchase process.',
       rating: 5,
     },
     {
@@ -86,7 +87,7 @@ const HomePage = () => {
     },
     {
       name: 'Mukesh Suthar',
-      position: 'Sales Executive',
+      position: 'Business Owner',
       review: 'Excellent EMI options tailored to my budget for my new car purchase. Their team is very knowledgeable and friendly.',
       rating: 4,
     },
@@ -334,6 +335,18 @@ const HomePage = () => {
                 <h3 className="text-xl font-semibold mb-3">Trusted Partnerships</h3>
                 <p className="text-gray-600">
                   We work with authorized dealerships to ensure genuine vehicles and transparent pricing.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="h-12 w-12 rounded-full bg-finance-accent flex items-center justify-center mx-auto mb-4">
+                  <Clock className="h-6 w-6 text-finance-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Quick Processing</h3>
+                <p className="text-gray-600">
+                  Fast and efficient processing for all your new car loan requirements with minimal documentation.
                 </p>
               </CardContent>
             </Card>
