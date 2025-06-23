@@ -61,42 +61,42 @@ const HomePage = () => {
   };
 
   const reviews = [
-    {
-      name: 'Dhiren Shah',
-      position: 'Entrepreneur',
-      review: 'Shlok Motors helped me finance my new car at amazing interest rates. Their team was extremely helpful throughout the new car purchase process.',
-      rating: 5,
-    },
-    {
-      name: 'Usmanbhai Ghanchi',
-      position: 'Business Owner',
-      review: 'I was looking to buy a new car and their finance options were the best in the market. Quick processing and minimum documentation for new car loans.',
-      rating: 5,
-    },
-    {
-      name: 'Nidaan Chemicals Limited',
-      position: 'Business',
-      review: 'Their insurance advisory saved me thousands of rupees on my new car insurance. Highly recommended for anyone looking for car insurance solutions.',
-      rating: 4,
-    },
-    {
-      name: 'Khamshibhai Brar',
-      position: 'Business Owner',
-      review: 'As a first-time new car buyer, I was nervous about financing my new car. Shlok made it incredibly easy and stress-free for me.',
-      rating: 5,
-    },
-    {
-      name: 'Mukesh Suthar',
-      position: 'Business Owner',
-      review: 'Excellent EMI options tailored to my budget for my new car purchase. Their team is very knowledgeable and friendly.',
-      rating: 4,
-    },
-    {
-      name: 'Sunil Bhavasar',
-      position: 'Business Owner',
-      review: 'Got my new car financed with excellent EMI options tailored to my budget. Their team is very knowledgeable and friendly.',
-      rating: 4,
-    },
+        {
+          name: 'Dhiren Shah',
+          position: 'Entrepreneur',
+          review: 'I’ve been buying cars from Shlok Motors for over 15 years. The service, pricing, and finance approvals are always top-notch. A name I trust every time.',
+          rating: 5,
+        },
+        {
+          name: 'Usmanbhai Ghanchi',
+          position: 'Business Owner',
+          review: 'When I purchased a new car from Shlok Motors and Finance, I was also looking to sell my used one. Their team quickly found a serious buyer within just a few days. The entire process was smooth, efficient, and saved me a great deal of time and effort',
+          rating: 5,
+        },
+        {
+          name: 'Nidaan Chemicals Limited',
+          position: 'Business',
+          review: 'We’ve purchased over 25 cars from Shlok Motors and have consistently experienced exceptional service. From documentation to delivery, their process is always smooth, prompt, and highly professional. Not once have we faced any issues — they truly set the standard for hassle-free car buying.',
+          rating: 4,
+        },
+        {
+          name: 'Khamshibhai Brar',
+          position: 'Business Owner',
+          review: 'For the last 16 years, Shlok Motors has helped me and my family with new car purchases. They always get us great deals with fast approvals and zero hassle.  ',
+          rating: 5,
+        },
+        {
+          name: 'Mukesh Suthar',
+          position: 'Business Owner',
+          review: 'Excellent EMI options tailored to my budget for my new car purchase. Their team is very knowledgeable and friendly.',
+          rating: 4,
+        },
+        {
+          name: 'Sunil Bhavasar',
+          position: 'Business Owner',
+          review: 'Shlok Motors and Finance helped me trade in my old car when I upgraded to a new one. Their team took care of everything—from valuation to sale. Truly convenient.',
+          rating: 4,
+        },
   ];
 
   return (

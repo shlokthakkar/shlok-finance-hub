@@ -35,7 +35,7 @@ const UsedCarsSection = () => {
                 </li>
                 <li className="flex items-start">
                   <FileCheck className="h-5 w-5 text-finance-primary mr-2 mt-0.5" />
-                  <span>Get complete vehicle inspection reports</span>
+                  <span>Secure the best deal based on your budget and preferences</span>
                 </li>
                 <li className="flex items-start">
                   <FileCheck className="h-5 w-5 text-finance-primary mr-2 mt-0.5" />
@@ -70,7 +70,7 @@ const UsedCarsSection = () => {
                 </li>
                 <li className="flex items-start">
                   <FileCheck className="h-5 w-5 text-finance-primary mr-2 mt-0.5" />
-                  <span>Quick inspection and documentation process</span>
+                  <span>Quick documentation process</span>
                 </li>
                 <li className="flex items-start">
                   <FileCheck className="h-5 w-5 text-finance-primary mr-2 mt-0.5" />

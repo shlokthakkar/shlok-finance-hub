@@ -70,7 +70,6 @@ const ServicesPage = () => {
       benefits: [
         'Fair market valuation',
         'Paperwork assistance',
-        'Inspection services',
         'Seamless ownership transfer'
       ]
     },
