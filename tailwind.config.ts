@@ -119,6 +119,8 @@ export default {
 				'slide-in': 'slide-in 0.5s ease-out'
 			},
 			fontFamily: {
+				merriweather: ['Merriweather', 'serif'],
+				'open-sans': ['Open Sans', 'sans-serif'],
 				poppins: ['Poppins', 'sans-serif'],
 				inter: ['Inter', 'sans-serif']
 			}
