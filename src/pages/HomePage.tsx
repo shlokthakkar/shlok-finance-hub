@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -102,7 +101,7 @@ const HomePage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="shlok-gradient">
+      <section id="hero" className="shlok-gradient">
         <div className="container mx-auto py-20 px-4 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pr-10 mb-10 lg:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
@@ -131,7 +130,7 @@ const HomePage = () => {
       </section>
 
       {/* Services Overview - Updated Layout */}
-      <section className="py-16 bg-gray-50">
+      <section id="services" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Our Financial Services</h2>
@@ -281,7 +280,7 @@ const HomePage = () => {
       </section>
 
       {/* New Car Services Section */}
-      <section className="py-16 bg-white">
+      <section id="new-cars" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">New Car Services</h2>
@@ -367,16 +366,22 @@ const HomePage = () => {
       </section>
 
       {/* Used Cars Section */}
-      <UsedCarsSection />
+      <section id="used-cars">
+        <UsedCarsSection />
+      </section>
 
       {/* Insurance Partners */}
-      <InsurancePartners />
+      <section id="insurance-partners">
+        <InsurancePartners />
+      </section>
 
       {/* Loan Partners - Moved between Insurance Partners and Achievements */}
-      <LoanPartners />
+      <section id="loan-partners">
+        <LoanPartners />
+      </section>
 
       {/* Quick Inquiry Form */}
-      <section className="py-16 bg-gray-50">
+      <section id="inquiry" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -463,7 +468,7 @@ const HomePage = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-16 bg-white">
+      <section id="about" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
@@ -492,7 +497,7 @@ const HomePage = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-gray-50">
+      <section id="testimonials" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
@@ -534,7 +539,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 shlok-gradient">
+      <section id="cta" className="py-16 shlok-gradient">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Finance Your Dream Car?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">

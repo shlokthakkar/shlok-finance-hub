@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ContactForm from '@/components/ContactForm';
 import { Card, CardContent } from '@/components/ui/card';
@@ -8,7 +7,7 @@ const ContactPage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-finance-primary text-white py-20">
+      <section id="contact-hero" className="bg-gradient-to-r from-blue-900 to-finance-primary text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">Contact Us</h1>
           <p className="text-xl max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
@@ -18,7 +17,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Information */}
-      <section className="py-16">
+      <section id="contact-info" className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div>
@@ -106,7 +105,7 @@ const ContactPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section id="faq" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
