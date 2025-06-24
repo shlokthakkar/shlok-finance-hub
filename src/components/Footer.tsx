@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Shlok Motors & Finance</h3>
             <p className="text-gray-300 mb-4">
-              Providing excellent car financing solutions and insurance advisory services since 2015.
+              Providing excellent car financing solutions and insurance advisory services since 1996.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-finance-secondary">
@@ -74,13 +74,33 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/services#mortgage-loan-solutions" className="text-gray-300 hover:text-white transition-colors">
+                  Mortgage Loans
+                </Link>
+              </li>
+              <li>
                 <Link to="/services#emi-options" className="text-gray-300 hover:text-white transition-colors">
                   EMI Options
                 </Link>
               </li>
               <li>
-                <Link to="/insurance" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/services#insurance-advisory" className="text-gray-300 hover:text-white transition-colors">
                   Insurance Advisory
+                </Link>
+              </li>
+              <li>
+                <Link to="/services#used-car-buy-sell" className="text-gray-300 hover:text-white transition-colors">
+                  Used Car Buy/Sell
+                </Link>
+              </li>
+              <li>
+                <Link to="/services#refinancing-solutions" className="text-gray-300 hover:text-white transition-colors">
+                  Refinancing Solutions
+                </Link>
+              </li>
+              <li>
+                <Link to="/services#documentation-assistance" className="text-gray-300 hover:text-white transition-colors">
+                  Documentation Assistance
                 </Link>
               </li>
             </ul>

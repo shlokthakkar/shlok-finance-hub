@@ -8,6 +8,7 @@ import { Car, Calculator, CreditCard, ShieldCheck, BadgePercent, Clock, FileChec
 const ServicesPage = () => {
   const services = [
     {
+      id: 'car-loans',
       title: 'Car Loans',
       description: 'Minimum interest rates starting from 9% for new cars and competitive rates for used cars with flexible repayment options.',
       icon: Car,
@@ -19,6 +20,7 @@ const ServicesPage = () => {
       ]
     },
     {
+      id: 'used-car-finance',
       title: 'Used Car Finance',
       description: 'Special financing options for trusted used cars to fit your budget.',
       icon: CreditCard,
@@ -30,6 +32,7 @@ const ServicesPage = () => {
       ]
     },
     {
+      id: 'mortgage-loan-solutions',
       title: 'Mortgage Loan Solutions',
       description: 'Comprehensive mortgage loan solutions up to ₹50 crore for residential and commercial properties.',
       icon: Home,
@@ -41,6 +44,7 @@ const ServicesPage = () => {
       ]
     },
     {
+      id: 'emi-options',
       title: 'EMI Options',
       description: 'Customized EMI plans tailored to your financial situation and comfort.',
       icon: Calculator,
@@ -52,6 +56,7 @@ const ServicesPage = () => {
       ]
     },
     {
+      id: 'insurance-advisory',
       title: 'Insurance Advisory',
       description: 'Expert guidance on choosing the right insurance coverage for your vehicle and other needs.',
       icon: ShieldCheck,
@@ -64,6 +69,7 @@ const ServicesPage = () => {
       ]
     },
     {
+      id: 'used-car-buy-sell',
       title: 'Used Car Buy/Sell',
       description: 'Complete assistance in buying or selling trusted used cars with transparent valuation and paperwork support.',
       icon: BarChart4,
@@ -74,6 +80,7 @@ const ServicesPage = () => {
       ]
     },
     {
+      id: 'refinancing-solutions',
       title: 'Refinancing Solutions',
       description: 'Restructure your existing car loan for better terms and lower rates.',
       icon: BadgePercent,
@@ -85,6 +92,7 @@ const ServicesPage = () => {
       ]
     },
     {
+      id: 'documentation-assistance',
       title: 'Documentation Assistance',
       description: 'Complete support with paperwork and registration for a hassle-free experience.',
       icon: FileCheck,
@@ -121,13 +129,14 @@ const ServicesPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                title={service.title}
-                description={service.description}
-                icon={service.icon}
-                benefits={service.benefits}
-              />
+              <div key={index} id={service.id} className="scroll-mt-20">
+                <ServiceCard
+                  title={service.title}
+                  description={service.description}
+                  icon={service.icon}
+                  benefits={service.benefits}
+                />
+              </div>
             ))}
           </div>
           
