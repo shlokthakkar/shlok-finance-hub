@@ -6,9 +6,15 @@ export const useScrollToTop = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Only scroll to top if there's no hash in the URL
-    if (!location.hash) {
+    if (location.hash) {
+      // If there's a hash, scroll to that element
+      const element = document.getElementById(location.hash.slice(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If no hash, scroll to top
       window.scrollTo(0, 0);
     }
-  }, [location.pathname]);
+  }, [location.pathname, location.hash]);
 };
