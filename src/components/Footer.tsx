@@ -15,14 +15,11 @@ const Footer = () => {
               Providing excellent car financing solutions and insurance advisory services since 1996.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-finance-secondary">
+              <a href="https://m.facebook.com/ShlokMotorsAndFinance/" className="text-gray-300 hover:text-finance-secondary">
                 <Facebook size={20} />
               </a>
               <a href="https://www.instagram.com/shlokmotorsandfinance" className="text-gray-300 hover:text-finance-secondary">
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-finance-secondary">
-                <Linkedin size={20} />
               </a>
             </div>
           </div>

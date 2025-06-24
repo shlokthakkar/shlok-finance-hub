@@ -213,7 +213,7 @@ const HomePage = () => {
                     <BarChart4 className="h-7 w-7 text-finance-primary" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2">Used Car Services</h3>
+                        <h3 className="text-xl font-semibold mb-2">Used Car Services</h3>
                     <p className="text-gray-600">
                       Complete assistance in buying and selling trusted used cars with valuation, documentation, and financing support.
                     </p>
@@ -236,7 +236,7 @@ const HomePage = () => {
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold mb-2">EMI Options</h3>
                     <p className="text-gray-600">
-                      Customize your EMI plans based on your budget and financial goals with our flexible options. No prepayment* penalties.
+                      Customize your EMI plans based on your budget and financial goals with our flexible options. No prepayment penalties*.
                     </p>
                     <p className="text-xs text-gray-500 mt-2">*T&C apply</p>
                   </div>
@@ -362,6 +362,11 @@ const HomePage = () => {
               </CardContent>
             </Card>
           </div>
+        <div className="mt-12 flex justify-center">
+          <Button asChild className="px-6 py-2 bg-finance-primary hover:bg-finance-primary/90 text-white rounded-md">
+            <Link to="/contact">Contact Us</Link>
+          </Button>
+        </div>
         </div>
       </section>
 

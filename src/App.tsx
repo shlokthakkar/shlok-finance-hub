@@ -10,6 +10,7 @@ import ServicesPage from "@/pages/ServicesPage";
 import ContactPage from "@/pages/ContactPage";
 import InsurancePage from "@/pages/InsurancePage";
 import InquiryPage from "@/pages/InquiryPage";
+import EmiCalculatorPage from "@/pages/EmiCalculatorPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/insurance" element={<InsurancePage />} />
           <Route path="/inquiry" element={<InquiryPage />} />
+          <Route path="/emi-calculator" element={<EmiCalculatorPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

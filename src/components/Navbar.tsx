@@ -35,6 +35,9 @@ const Navbar = () => {
           <Link to="/insurance" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             Insurance
           </Link>
+          <Link to="/emi-calculator" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
+            EMI Calculator
+          </Link>
           <Link to="/contact" className="text-gray-700 hover:text-finance-primary font-medium transition-colors">
             Contact
           </Link>
@@ -78,6 +81,13 @@ const Navbar = () => {
             >
               Insurance
             </Link>
+             <Link
+                to="/emi-calculator"
+                className="text-gray-700 hover:text-finance-primary font-medium py-2 transition-colors"
+                onClick={toggleMenu}
+             >
+                EMI Calculator
+             </Link>
             <Link 
               to="/contact" 
               className="text-gray-700 hover:text-finance-primary font-medium py-2 transition-colors"
