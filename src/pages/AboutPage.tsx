@@ -13,7 +13,7 @@ const AboutPage = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">About Shlok Motors & Finance</h1>
           <p className="text-xl max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Dedicated to providing excellent car financing and insurance solutions since 2015.
+            Dedicated to providing excellent car financing and insurance solutions since 1996.
           </p>
         </div>
       </section>
@@ -32,7 +32,7 @@ const AboutPage = () => {
             <div className="lg:w-1/2">
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-700 mb-4">
-                Shlok Motors & Finance was established in 2015 by Chirag Thakkar with a vision to simplify 
+                Shlok Motors & Finance was established in 1996 by Chirag Thakkar with a vision to simplify
                 the car financing process for customers in Ahmedabad and across Gujarat.
               </p>
               <p className="text-gray-700 mb-4">
