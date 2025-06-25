@@ -6,25 +6,18 @@ import { Trophy, Award, Shield } from 'lucide-react';
 const AchievementsSection = () => {
   const achievements = [
     {
-      title: "Best Insurance Advisor",
+      title: "Bronze Plus Award – Giant Steps FY'23",
       company: "Tata AIG General Insurance",
       year: "2023",
-      description: "Recognized for outstanding performance in vehicle insurance sales and customer service.",
-      icon: Trophy
-    },
-    {
-      title: "Top Performer Award",
-      company: "ICICI Bank Car Loans",
-      year: "2022",
-      description: "Achieved highest car loan disbursement in the western region.",
+      description: "Awarded for exemplary performance in the Financial Year 2022–2023.Commended for raising the bar through unwavering commitment to excellence and consistently achieving outstanding results.",
       icon: Award
     },
     {
-      title: "Customer Excellence",
-      company: "HDFC Bank",
-      year: "2021",
-      description: "Acknowledged for maintaining exceptional customer satisfaction ratings.",
-      icon: Shield
+      title: "Outstanding Performance – Motor Speed Fest Q2 ",
+      company: "Tata AIG General Insurance",
+      year: "2024",
+      description: "Recognized for exceptional dedication and performance in the Motor Campaign, driving outstanding business outcomes for FY'24.",
+      icon: Award
     }
   ];
 
@@ -38,7 +31,7 @@ const AchievementsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {achievements.map((achievement, index) => (
             <Card key={index} className="h-full hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">

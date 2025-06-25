@@ -70,7 +70,7 @@ const AboutPage = () => {
               <h3 className="text-2xl font-bold mb-2">Chirag Thakkar</h3>
               <p className="text-finance-primary font-medium mb-4">Founder & CEO</p>
               <p className="text-gray-700 mb-4">
-                With over 15 years of experience in the automotive and finance industry, Chirag Thakkar 
+                With over 25 years of experience in the automotive and finance industry, Chirag Thakkar
                 founded Shlok Motors & Finance with a mission to make car ownership accessible to everyone.
               </p>
               <p className="text-gray-700 mb-4">
